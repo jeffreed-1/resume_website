@@ -1,1 +1,1 @@
-My resume website readme
+This is a place for me to practice using CSS and html to make a website.  I'm using Bootstrap, and borrowing a bunch of code from the Bootstrap documentation website to help me get started.  For now I am just customizing things to learn how it all works, but I will try creating my own new features soon.
