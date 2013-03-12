@@ -4,7 +4,7 @@ body
 	background-color:#dafbf8;
 }
 
-.jackie-navbar
+.custom-navbar
 {
 	background-image: -moz-linear-gradient(top, #a4bbf4, #f2f2f2);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a4bbf4), to(#f2f2f2));
@@ -14,35 +14,35 @@ body
 	background-repeat: repeat-x;
 }
 
-.jackie-sidebar
+.custom-sidebar
 {
 	position:fixed;
 }
 
 
-.jackie-sidenav
+.custom-sidenav
 {
 	/*background-color:green;*/
 	top:40px;
 	position:fixed;
 }
 
-.jackie-sidenav a
+.custom-sidenav a
 {
 	color:black;
 }
 
-.jackie-desc
+.custom-desc
 {
 	padding-top:40px;
 }
 
-.jackie-header
+.custom-header
 {
 	margin-top:40px;
 }
 
-.jackie-footer
+.custom-footer
 {
 	border-top:1px solid darkgray;
 	margin-top:40px;
@@ -50,7 +50,7 @@ body
 	color:gray;
 }
 
-.jackie-jumbotron
+.custom-jumbotron
 {
 	position:relative;
 	padding-bottom:40px;
@@ -65,7 +65,7 @@ body
 	text-align:left;
 }
 
-.jackie-img
+.custom-img
 {
 	/*max-width:90%;
 	width:90%;
