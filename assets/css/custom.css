@@ -19,6 +19,13 @@ body
 	
 }
 
+.custom-carousel-caption
+{
+  background: #333333;
+  background: rgba(0, 0, 0, 0.25);
+}
+}
+
 
 .custom-sidenav
 {
