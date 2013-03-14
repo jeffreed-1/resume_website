@@ -12,6 +12,7 @@ body
 	background-image: -o-linear-gradient(top, #a4bbf4, #f2f2f2);
 	background-image: linear-gradient(to bottom, #a4bbf4, #f2f2f2);
 	background-repeat: repeat-x;
+	
 }
 
 .custom-sidebar
@@ -39,14 +40,20 @@ body
 
 .carousel-inner > .item > img
 {
-	height: 500px;
+	/*height: 500px;*/
+}
+
+#myCarousel
+{
+	/*height:500px;*/
+	
 }
 
 .custom-sidenav
 {
 	/*background-color:green;*/
 	top:40px;
-	position:fixed;
+	/*position:fixed;*/
 }
 
 .custom-sidenav a
