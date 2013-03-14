@@ -25,14 +25,20 @@
 
  /* AFFIX CLASS DEFINITION
   * ====================== */
-
+  console.log("top"+$);
   var Affix = function (element, options) {
+    console.log("raw"+this.options);
     this.options = $.extend({}, $.fn.affix.defaults, options)
+	console.log("now"+this.options);
+	console.log("hmm"+$.fn.affix.defaults);
+	console.log("argh"+options);
     this.$window = $(window)
       .on('scroll.affix.data-api', $.proxy(this.checkPosition, this))
       .on('click.affix.data-api',  $.proxy(function () { setTimeout($.proxy(this.checkPosition, this), 1) }, this))
     this.$element = $(element)
     this.checkPosition()
+	console.log("options"+options);
+
   }
 
   Affix.prototype.checkPosition = function () {
@@ -50,18 +56,22 @@
     if (typeof offset != 'object') offsetBottom = offsetTop = offset
     if (typeof offsetTop == 'function') offsetTop = offset.top()
     if (typeof offsetBottom == 'function') offsetBottom = offset.bottom()
-
-    affix = this.unpin != null && (scrollTop + this.unpin <= position.top) ?
+	
+	console.log("this element"+this.$element);
+	/*console.log(scrollTop);*/
+    
+	affix = this.unpin != null && (scrollTop + this.unpin <= position.top) ?
       false    : offsetBottom != null && (position.top + this.$element.height() >= scrollHeight - offsetBottom) ?
       'bottom' : offsetTop != null && scrollTop <= offsetTop ?
       'top'    : false
-
+	console.log("this affix"+affix);
     if (this.affixed === affix) return
 
     this.affixed = affix
     this.unpin = affix == 'bottom' ? position.top - scrollTop : null
 
     this.$element.removeClass(reset).addClass('affix' + (affix ? '-' + affix : ''))
+	console.log("affix proto check pos");
   }
 
 
@@ -77,6 +87,7 @@
         , options = typeof option == 'object' && option
       if (!data) $this.data('affix', (data = new Affix(this, options)))
       if (typeof option == 'string') data[option]()
+	  console.log("affix plugin def");
     })
   }
 
@@ -110,6 +121,7 @@
       data.offsetTop && (data.offset.top = data.offsetTop)
 
       $spy.affix(data)
+	  console.log("data-api?");
     })
   })
 
