@@ -21,11 +21,26 @@ body
 
 .custom-carousel-caption
 {
-  background: #333333;
-  background: rgba(0, 0, 0, 0.25);
-}
+  /*background: #333333;*/
+  background: rgba(0, 0, 0, 0.75);
+  color:white;
 }
 
+.custom-carousel-caption > .custom-lead
+{
+	color:white;
+	height:50px;
+}
+
+.custom-carousel-caption > h1
+{
+	
+}
+
+.carousel-inner > .item > img
+{
+	height: 500px;
+}
 
 .custom-sidenav
 {
