@@ -12,8 +12,8 @@ body
 	background-image: -o-linear-gradient(top, #a4bbf4, #f2f2f2);
 	background-image: linear-gradient(to bottom, #a4bbf4, #f2f2f2);
 	background-repeat: repeat-x;
-	
 }
+
 
 .custom-sidebar
 {
@@ -45,8 +45,8 @@ body
 
 #myCarousel
 {
-	/*height:500px;*/
-	
+	/*height:500px;
+	position:relative;*/
 }
 
 .custom-sidenav
@@ -92,6 +92,7 @@ body
 	background: -ms-linear-gradient(45deg,  #81b18d 0%,#81b1a8 100%); /* IE10+ */
 	background: linear-gradient(45deg,  #81b18d 0%,#81b1a8 100%); /* W3C */
 	text-align:left;
+	/*height:500px;*/
 }
 
 .custom-img
@@ -121,4 +122,10 @@ body
 h3
 {
 	border-bottom:1px solid darkgray;
+}
+
+.bs-docs-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 370px;
 }
