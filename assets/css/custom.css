@@ -14,7 +14,10 @@ body
 	background-repeat: repeat-x;
 }
 
-
+.nav a
+{
+	font-size:15px;
+}
 .custom-sidebar
 {
 	
